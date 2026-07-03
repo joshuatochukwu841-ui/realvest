@@ -1,0 +1,20 @@
+/* PRIVACY-BG */
+.privacy-hero h1 {
+    font-size: clamp(1.4em, 3vw, 1.9rem);
+    font-weight: 700;
+    color: var(--black);
+}
+/* END */
+
+/* PRIVACY-CONTENT */
+.privacy-content{
+    background: url("../images/pattern-3.png");
+        background-repeat: repeat-x;
+        background-position: bottom;
+}
+.privacy-content h4{
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 700;
+}
+/* END */

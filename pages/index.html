@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <!-- styles -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- layout -->
+    <link rel="stylesheet" href="../CSS/layout.css">
+
+    <!-- main -->
+    <link rel="stylesheet" href="../CSS/main.css">
+
+    <title>RealVest - Home</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white p-3">
+        <div class="container">
+            <a href="../pages/index.html" class="nav-brand">
+                <img src="../images/logo.png" alt="" style="width:190px ; height: 39px;">
+            </a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="../pages/index.html" class="nav-link active ps-3">Home</a></li>
+                    <li class="nav-item"><a href="../pages/about.html" class="nav-link ps-3">About</a></li>
+                    <li class="nav-item"><a href="../pages/properties.html" class="nav-link ps-3">Properties</a></li>
+                    <li class="nav-item"><a href="../pages/blog.html" class="nav-link ps-3">Blog</a></li>
+                    <li class="nav-item"><a href="../pages/contact.html" class="nav-link ps-3 me-4">Contact</a></li>
+
+                    <li class="nav-item d-flex align-items-center justify-content-between border-0"><span
+                            class="nav-link dropdown" style="cursor: pointer;">
+                            <span><img src="../images/english.png" alt=""></span>
+                            English
+                            <span class="dropdown-btn  shadow-none border-0 mt-5" data-bs-toggle="collapse"
+                                data-bs-target="#dropdown">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                                    </path>
+                                </svg>
+                            </span>
+
+                            <span class="dropdown-menu shadow-md" id="dropdown">
+                                <div class="country">
+                                    <span class="flag"><img src="../images/bangladesh.png" alt=""></span>
+                                    <span class="h6 languages">Bangla</span>
+                                </div>
+                                <div class="country">
+                                    <span class="flag"><img src="../images/spain.png" alt=""></span>
+                                    <span class="h6 languages">Spanish</span>
+                                </div>
+                                <div class="country">
+                                    <span class="flag"><img src="../images/hindi.png" alt=""></span>
+                                    <span class="h6 languages">Hindi</span>
+                                </div>
+                            </span>
+                        </span>
+
+                        <a href="../pages/user-login.html" class="btn d-lg-none d-md-block rounded fw-semibold"
+                            style="padding: 8px 20px; background: var(--orange-color); color: #fff;">Login</a>
+                    </li>
+
+                    <li class="nav-item d-none d-lg-block"><a href="../pages/user-login.html" class="nav-link"><span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    style="width: 19px; height: 19px; color: var(--orange-color);">
+                                    <path
+                                        d="M12 14V16C8.68629 16 6 18.6863 6 22H4C4 17.5817 7.58172 14 12 14ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11ZM21 17H22V22H14V17H15V16C15 14.3431 16.3431 13 18 13C19.6569 13 21 14.3431 21 16V17ZM19 17V16C19 15.4477 18.5523 15 18 15C17.4477 15 17 15.4477 17 16V17H19Z">
+                                    </path>
+                                </svg>
+                            </span>User Login |</a>
+                    </li>
+
+                    <li class="nav-item d-none d-lg-block"><a href="../pages/vendor-login.html" class="nav-link"><span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentcolor"
+                                    style="width: 19px; height: 19px; color: var(--orange-color);">
+                                    <path
+                                        d="M261.5 16L128 16c-26.5 0-48 21.5-48 48l0 384c0 26.5 21.5 48 48 48l149.1 0-3.2 16-145.9 0c-35.3 0-64-28.7-64-64L64 64C64 28.7 92.7 0 128 0L261.5 0c17 0 33.3 6.7 45.3 18.7L429.3 141.3c12 12 18.7 28.3 18.7 45.3l0 81.2-16 16 0-97.2c0-3.6-.4-7.1-1.2-10.5L328 176c-30.9 0-56-25.1-56-56l0-102.8c-3.4-.8-6.9-1.2-10.5-1.2zm54 384.2c-4.9 4.9-9.3 10.2-13.1 15.8L240 416c-3.5 0-6.6-2.3-7.7-5.7l-21.2-70.7c-.6-2.1-2.6-3.6-4.9-3.6-1.5 0-3 .7-4 1.9L142.3 413c-2.8 3.4-7.8 4-11.2 1.2s-4-7.8-1.2-11.2l60.1-75.1c4-5 10-7.9 16.4-7.9 9.3 0 17.5 6.1 20.2 15l19.5 65 69.7 0-.2 .2zM418 152.6L295.5 30.1c-2.3-2.3-4.8-4.3-7.4-6.1l0 96c0 22.1 17.9 40 40 40l96 0c-1.8-2.7-3.8-5.1-6.1-7.4zM336.4 527.5L393.9 516c9.3-1.9 17.8-6.4 24.5-13.1L551 370.3 493.6 312.9 361 445.5c-6.7 6.7-11.3 15.2-13.1 24.5l-11.5 57.5zM588.7 332.6c15.8-15.8 15.8-41.5 0-57.4s-41.5-15.8-57.4 0l-26.4 26.4 57.4 57.4 26.4-26.4zM320.3 526.5l11.9-59.6c2.5-12.4 8.6-23.8 17.5-32.7L520 263.9c22.1-22.1 57.9-22.1 80 0s22.1 57.9 0 80L429.7 514.2c-8.9 8.9-20.3 15-32.7 17.5l-59.6 11.9c-.9 .2-1.9 .3-2.9 .3-8 0-14.6-6.5-14.6-14.6 0-1 .1-1.9 .3-2.9z" />
+                                </svg>
+                                </svg>
+                            </span>Vendor Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END -->
+
+    <!-- BACK-TO-TOP -->
+    <a href="#" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentcolor">
+            <path fill="rgb(255, 255, 255)"
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3 329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 329.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z" />
+        </svg>
+    </a>
+    <!-- END -->
+
+    <main>
+        <!-- HERO-BG -->
+        <section class="hero-background bg-secondary  bg-opacity-10 py-5 pattern-3">
+            <div class="container py-5">
+                <div class="row my-4">
+                    <div class="col-lg-7 mt-5 pb-3">
+                        <h5 class="hero-label ">Smart & secure real estate investment platform</h5>
+
+                        <h1>Invest in The Future of Real Estate</h1>
+
+                        <span><a href="#" class=" hero-btn">Get Started</a></span>
+
+                        <div class="hero-stats">
+                            <span>
+                                <h4>9k<span>+</span></h4>
+                                <p>Members</p>
+                            </span>
+                            <span>
+                                <h4>3k<span>+</span></h4>
+                                <p>Investors</p>
+                            </span>
+                            <span>
+                                <h4>20<span>%</span></h4>
+                                <p>Average Profit Up</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mb-5">
+                        <div class="hero-image d-none d-lg-block">
+                            <img src="../images/hero-img.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END -->
+
+        <!-- SECTION-INVEST -->
+        <section class="section-invest py-5">
+            <div class="container py-5">
+                <div class="heading text-center pt-3 fw-semibold">
+                    <span class="label rounded d-inline-block mb-3"
+                        style="padding: 4px 12px; font-size: clamp(0.8em, 3vw, 1rem); color: var(--orange-color); background: #fff0e6;">
+                        Built to help smart investors invest smarter
+                    </span>
+                    <h1 class="title fw-bold" style="font-size: clamp(1.8em, 3vw, 4rem); color: var(--black);">Why
+                        Invest in
+                        Real Estate?</h1>
+                </div>
+                <div class="row mt-5 g-4">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="invest-card d-flex align-items-center flex-column">
+                            <span class="support-icon pb-4">
+                                <img src="../images/images.png" alt="" style="width: 100px; height: 100px;">
+                            </span>
+
+                            <h4>Secure Investment</h4>
+                            <p>Rest assured with our secure investment solutions, your financial future is protected</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="invest-card d-flex align-items-center flex-column">
+                            <span class="support-icon pb-4">
+                                <img src="../images/channels4_profile.jpg" alt="" style="width: 100px; height: 100px;">
+                            </span>
+
+                            <h4>Transparent Platform</h4>
+                            <p>Experience the confidence of a transparent platform for your peace of mind</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="invest-card d-flex align-items-center flex-column">
+                            <span class="support-icon pb-4">
+                                <img src="../images/Migrate et modernize.svg" alt=""
+                                    style="width: 100px; height: 100px;">
+                            </span>
+
+                            <h4>Passive Income</h4>
+                            <p>Explore opportunities for generating passive income streams</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="invest-card d-flex align-items-center flex-column">
+                            <span class="support-icon pb-4">
+                                <img src="../images/headphone.png" alt="" style="width: 100px; height: 100px;">
+                            </span>
+
+                            <h4>Support</h4>
+                            <p>Count on our dedicated support team for prompt and reliable assistance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END -->
+
+        <!-- EXPLORE-SECTION -->
+        <section class="explore-section bg-secondary  bg-opacity-10  py-5 pattern-2">
+            <div class="container py-5">
+                <div class="heading  pt-3 fw-semibold">
+                    <span class="label rounded d-inline-block mb-3"
+                        style="padding: 5px 12px; font-size: clamp(1em, 3vw, 1.2rem); color: var(--orange-color); background: #fff0e6;">
+                        Latest properties
+                    </span>
+                    <div class="d-flex justify-content-between">
+                        <h1 class="title fw-bold" style="font-size: clamp(1.8em, 3vw, 4rem); color: var(--black);">
+                            Explore
+                            Latest Properties
+                        </h1>
+                        <a href="#" class="explore-icon d-flex align-items-center gap-3 fs-5"> Explore <span><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentcolor">
+                                    <path
+                                        d="M566.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L466.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l434.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                                </svg></span></a>
+                    </div>
+                </div>
+                <div class="row g-4 pt-5">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card explore-card">
+                            <a href="#" class="explore-img">
+                                <img src="../images/65f96cf6e355d1710845174.png" alt="" class="img-fluid">
+                            </a>
+                            <div class="contents">
+                                <a href="#" class="card-label">Luxury Condominiums</a>
+
+                                <div class="d-flex align-items-center gap-2 pb-4">
+                                    <span class="location-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                                            fill="currentcolor"
+                                            style="width: 16px; height: 16px; color: var(--orange-color);">
+                                            <path
+                                                d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z" />
+                                        </svg>
+                                    </span>
+                                    <span style="font-size: 14px; color: var(--text-color);">
+                                        New York, USA
+                                    </span>
+                                </div>
+
+                                <span class="progress-fill"></span>
+                                <p>12 Square Feet | $144,000.00(100%)</p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="profit">
+                                        Profit
+                                    </span>
+
+                                    <span class="percentage">25-40%</span>
+
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="profit">
+                                        Profit Schedule
+                                    </span>
+                                    <span class="percentage">Repeat(Monthly)</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>
+                                        Capital Back
+                                    </span>
+                                    <span class="percentage">Yes</span>
+
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>
+                                        <a href="#" class="d-block my-3 text-white rounded fw-semibold"
+                                            style="background-color: var(--orange-color);padding: 6px 20px;">Details</a>
+                                    </span>
+                                    <span class="amount">$12,000.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card explore-card">
+                            <a href="#" class="explore-img">
+                                <img src="../images/65f6d376973821710674806.png" alt="" class="img-fluid">
+                            </a>
+                            <div class="contents">
+                                <a href="#" class="card-label">Traditional Malachiya Townhouse</a>
+
+                                <div class="d-flex align-items-center gap-2 pb-4">
+                                    <span class="location-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                                            fill="currentcolor"
+                                            style="width: 16px; height: 16px; color: var(--orange-color);">
+                                            <path
+                                                d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z" />
+                                        </svg>
+                                    </span>
+                                    <span style="font-size: 14px; color: var(--text-color);">
+                                        San Francisco, USA
+                                    </span>
+                                </div>
+
+                                <span class="progress-fill"></span>
+                                <p>5 Square Feet | $100,000.00(100%)</p>
+
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="profit">
+                                        Profit
+                                    </span>
+
+                                    <span class="percentage">$5,000.00</span>
+
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="profit">
+                                        Profit Schedule
+                                    </span>
+                                    <span class="percentage">Onetime</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>
+                                        Capital Back
+                                    </span>
+                                    <span class="percentage">Yes</span>
+
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>
+                                        <a href="#" class="d-block my-3 text-white rounded fw-semibold"
+                                            style="background-color: var(--orange-color);padding: 6px 20px;">Details</a>
+                                    </span>
+                                    <span class="amount">$20,000.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card explore-card">
+                            <a href="#" class="explore-img">
+                                <img src="../images/65f5601bc697a1710579739.png" alt="" class="img-fluid">
+                            </a>
+                            <div class="contents">
+                                <a href="#" class="card-label">Elite Horizon</a>
+
+                                <div class="d-flex align-items-center gap-2 pb-4">
+                                    <span class="location-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                                            fill="currentcolor"
+                                            style="width: 16px; height: 16px; color: var(--orange-color);">
+                                            <path
+                                                d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z" />
+                                        </svg>
+                                    </span>
+                                    <span style="font-size: 14px; color: var(--text-color);">
+                                        Tokyo, Japan
+                                    </span>
+                                </div>
+
+                                <span class="progress-fill"></span>
+                                <p>2 Square Feet | $145,000.00(100%)</p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="profit">
+                                        Profit
+                                    </span>
+
+                                    <span class="percentage">$5,000.00</span>
+
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="profit">
+                                        Profit Schedule
+                                    </span>
+                                    <span class="percentage">Repeat(Yearly)</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>
+                                        Capital Back
+                                    </span>
+                                    <span class="percentage">No</span>
+
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>
+                                        <a href="#" class="d-block my-3 text-white rounded fw-semibold"
+                                            style="background-color: var(--orange-color);padding: 6px 20px;">Details</a>
+                                    </span>
+                                    <span class="amount">$25,000.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- END -->
+
+        <!-- ABOUT-SECTION -->
+        <section class="about-section bg-secondary  bg-opacity-10 py-5">
+            <div class="container py-5">
+                <div class="row g-4 my-5">
+                    <div class="col-md-6 ">
+                        <div style="max-width: 450px;">
+                            <div class="heading  mt-lg-5 ">
+                                <span class="label rounded d-inline-block mt-5"
+                                    style="padding: 5px 12px; font-size: clamp(1em, 3vw, 1.2rem); color: var(--orange-color); background: #fff0e6;">
+                                    About RealVest
+                                </span>
+                                <h1 class="title fw-bold my-3"
+                                    style="font-size: clamp(1.8em, 3.3vw, 4rem); color: var(--black);">About Our Real
+                                    Estate
+                                </h1>
+                            </div>
+
+                            <h5 class="about-label pt-4">Finding great properties for investment</h5>
+
+                            <p class="pt-2">we specialize in providing a streamlined platform for real estate investors
+                                to
+                                discover lucrative opportunities. Our
+                                user-friendly interface offers access to a diverse range of properties, complete with
+                                detailed analytics and expert
+                                guidance to help you make informed decisions. Whether you're a seasoned investor or just
+                                getting started, RealVest
+                                is
+                                your trusted partner for success in the real estate market</p>
+
+                            <span><a href="#" class="btn discover-btn">Discover More</a></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pt-lg-0 pt-md-5">
+                        <div class="about-img d-none d-lg-block">
+                            <div class="img d-none d-lg-block">
+                                <img class="thumb" src="../images/65c46856b5a681707370582.jpg" alt="">
+                            </div>
+                            <div class="mini-card shadow">
+                                <h3>20<span>%</span></h3>
+                                <h5>Average Profit Upto</h5>
+                            </div>
+                            <div class="mini-card-bottom d-flex align-items-center gap-4 ">
+                                <span>
+                                    <h3>3K<span>+</span></h3>
+                                    <h5>Investors</h5>
+                                </span>
+                                <span>
+                                    <img src="../images/65c4685716ce41707370583.png" alt="" class="img-fluid">
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="about-img-hidden d-block d-lg-none mt-lg-0 mt-5">
+                            <div class="img-hidden">
+                                <img class="thumb" src="../images/65c46856b5a681707370582.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <div class="mini-card-hidden shadow">
+                                    <h3>20<span>%</span></h3>
+                                    <h5>Average Profit Upto</h5>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="small-card d-flex align-items-center gap-4">
+                                    <span>
+                                        <h3>3K<span>+</span></h3>
+                                        <h5>Investors</h5>
+                                    </span>
+                                    <span>
+                                        <img src="../images/65c4685716ce41707370583.png" alt="" class="img-fluid">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END -->
+
+        <!-- CITIES-SECTION -->
+        <section class="cities-section py-5">
+            <div class="container py-5">
+                <div class="heading">
+                    <span class="label rounded d-inline-block mt-5"
+                        style="padding: 5px 12px; font-size: clamp(1em, 3vw, 1.2rem); color: var(--orange-color); background: #fff0e6;">
+                        Cities
+                    </span>
+                    <div class="d-flex  align-items-center justify-content-between">
+                        <h1 class="title fw-bold my-3"
+                            style="font-size: clamp(1.8em, 3.3vw, 4rem); color: var(--black);">
+                            Explore By Cities
+                        </h1>
+
+                        <div class="scroll-icons d-flex gap-4">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" fill="currentcolor">
+                                    <path
+                                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                                </svg>
+                            </span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" fill="currentcolor">
+                                    <path
+                                        d="M247.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L179.2 256 41.9 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cities-row pb-5">
+                    <div class="cities-col">
+                        <a href="#" class="img-wrapper"
+                            style="background: url('../images/65dd6475edc2e1709007989.png')center/cover;">
+
+                            <div class="overlay">
+                                <h1>Paris, France</h1>
+                                <h4>4 Properties</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cities-col">
+                        <a href="#" class="img-wrapper"
+                            style="background: url('../images/65dd64682c4ea1709007976.png')center/cover;">
+
+                            <div class="overlay">
+                                <h1>Berlin, Germany</h1>
+                                <h4>2 Properties</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cities-col">
+                        <a href="#" class="img-wrapper"
+                            style="background: url('../images/65dd645794bc81709007959.png')center/cover;">
+
+                            <div class="overlay">
+                                <h1>Tokyo, Japan</h1>
+                                <h4>1 Properties</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cities-col">
+                        <a href="#" class="img-wrapper"
+                            style="background: url('../images/65ebfce1b41bd1709964513.png')center/cover;">
+
+                            <div class="overlay">
+                                <h1>San Francisco, USA</h1>
+                                <h4>1 Properties</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cities-col">
+                        <a href="#" class="img-wrapper"
+                            style="background: url('../images/65ebff15c4cd41709965077.png')center/cover;">
+
+                            <div class="overlay">
+                                <h1>New York, USA</h1>
+                                <h4>7 Properties</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cities-col">
+                        <a href="#" class="img-wrapper"
+                            style="background: url('../images/65dd6482c72881709008002.png')center/cover;">
+
+                            <div class="overlay">
+                                <h1>London, England</h1>
+                                <h4>4 Properties</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END -->
+
+        <!-- PROPERTIES-SECTION -->
+        <section class="properties bg-secondary  bg-opacity-10 py-5">
+            <div class="container py-5">
+                <div class="heading  py-3 ">
+                    <span class="label rounded d-inline-block mb-3"
+                        style="padding: 5px 12px; font-size: clamp(1em, 3vw, 1.2rem); color: var(--orange-color); background: #fff0e6;">
+                        Featured properties
+                    </span>
+                    <div class="d-flex justify-content-between">
+                        <h1 class="title fw-bold" style="font-size: clamp(1.8em, 3vw, 4rem); color: var(--black);">All
+                            Properties Spotlight
+                        </h1>
+                        <a href="#" class="explore-icon d-flex align-items-center gap-3 fs-5"> Explore
+                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentcolor">
+                                    <path
+                                        d="M566.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L466.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l434.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                                </svg>
+                            </span></a>
+                    </div>
+                </div>
+
+                <div class="card property-card mt-5 ">
+                    <div class="row ">
+                        <a href="#" class="property-img col-md-6 col-sm-12">
+                            <img src="../images/65f6d376973821710674806.png" alt="property-image" class="img-fluid"
+                                style="height: 100%;">
+                        </a>
+
+
+                        <div class="contents col-md-6 col-sm-12">
+                            <a href="#" class="card-label">Traditional Malachiya Townhouse</a>
+
+                            <div class="d-flex align-items-center gap-2 pb-4">
+                                <span class="location-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentcolor"
+                                        style="width: 16px; height: 16px; color: var(--orange-color);">
+                                        <path
+                                            d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z" />
+                                    </svg>
+                                </span>
+                                <span style="font-size: 16px; color: var(--text-color);">
+                                    San Francisco, USA
+                                </span>
+                            </div>
+
+                            <span class="progress-fill"></span>
+                            <p>5 Ivestors | $100,000.00(100%)</p>
+
+                            <div class="d-flex justify-content-between align-items-center border-bottom pb-4">
+                                <div class="d-flex flex-column">
+
+                                    <span class="percentage">$5,000.00</span>
+                                    <span class="profit">
+                                        Profit
+                                    </span>
+
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <span class="percentage">Onetime</span>
+                                    <span class="profit">
+                                        Profit Schedule
+                                    </span>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <span class="percentage">Yes</span>
+                                    <span class="profit">
+                                        Capital Back
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <a href="#" class="d-block my-3 text-white rounded fw-semibold"
+                                        style="background-color: var(--orange-color);padding: 6px 20px;">Details</a>
+                                </span>
+                                <span class="amount">$20,000.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card property-card mt-5 ">
+                    <div class="row ">
+                        <a href="#" class="property-img col-md-6 col-sm-12">
+                            <img src="../images/65f97966644131710848358.png" alt="property-image" class="img-fluid"
+                                style="height: 100%;">
+                        </a>
+
+
+                        <div class="contents col-md-6 col-sm-12">
+                            <a href="#" class="card-label">Modern Loft</a>
+
+                            <div class="d-flex align-items-center gap-2 pb-4">
+                                <span class="location-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentcolor"
+                                        style="width: 16px; height: 16px; color: var(--orange-color);">
+                                        <path
+                                            d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z" />
+                                    </svg>
+                                </span>
+                                <span style="font-size: 16px; color: var(--text-color);">
+                                    New York, USA
+                                </span>
+                            </div>
+
+                            <span class="progress-fill"></span>
+                            <p>10 Ivestors | $145,400.00(100%)</p>
+
+                            <div class="d-flex justify-content-between align-items-center border-bottom pb-4">
+                                <div class="d-flex flex-column">
+
+                                    <span class="percentage">5 - 8%</span>
+                                    <span class="profit">
+                                        Profit
+                                    </span>
+
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <span class="percentage">Lifetime (Monthly)</span>
+                                    <span class="profit">
+                                        Profit Schedule
+                                    </span>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <span class="percentage">Yes</span>
+                                    <span class="profit">
+                                        Capital Back
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <a href="#" class="d-block my-3 text-white rounded fw-semibold"
+                                        style="background-color: var(--orange-color);padding: 6px 20px;">Details</a>
+                                </span>
+                                <span class="amount">$20,000.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card property-card mt-5 ">
+                    <div class="row ">
+                        <a href="#" class="property-img col-md-6 col-sm-12">
+                            <img src="../images/65f975240d2011710847268.png" alt="property-image" class="img-fluid"
+                                style="height: 100%;">
+                        </a>
+
+
+                        <div class="contents col-md-6 col-sm-12">
+                            <a href="#" class="card-label">Luxury Penthouse</a>
+
+                            <div class="d-flex align-items-center gap-2 pb-4">
+                                <span class="location-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentcolor"
+                                        style="width: 16px; height: 16px; color: var(--orange-color);">
+                                        <path
+                                            d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z" />
+                                    </svg>
+                                </span>
+                                <span style="font-size: 16px; color: var(--text-color);">
+                                    London, England
+                                </span>
+                            </div>
+
+                            <span class="progress-fill"></span>
+                            <p>5 Investors | $50,000.00 (100%)</p>
+
+                            <div class="d-flex justify-content-between align-items-center border-bottom pb-4">
+                                <div class="d-flex flex-column">
+
+                                    <span class="percentage">$1,000.00 - $1,500.00</span>
+                                    <span class="profit">
+                                        Profit
+                                    </span>
+
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <span class="percentage">Onetime</span>
+                                    <span class="profit">
+                                        Profit Schedule
+                                    </span>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <span class="percentage">Yes</span>
+                                    <span class="profit">
+                                        Capital Back
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <a href="#" class="d-block my-3 text-white rounded fw-semibold"
+                                        style="background-color: var(--orange-color);padding: 6px 20px;">Details</a>
+                                </span>
+                                <span class="amount">$20,000.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END -->
+
+        <!-- FEEDBACK-SECTION -->
+        <section class="feedback-section py-5">
+            <div class="container pb-5">
+                <div class="row my-5" style="border-bottom: 2px solid var(--black);">
+                    <div class="col-md-6">
+                        <div class="header " style="max-width: 420px;">
+                            <span class="label rounded d-inline-block mt-5"
+                                style="padding: 5px 12px; font-size: clamp(1em, 3vw, 1.2rem); color: var(--orange-color); background: #fff0e6;">
+                                Investors trust us
+                            </span>
+                            <h1 class="title fw-bold my-3"
+                                style="font-size: clamp(1.8em, 3.3vw, 4rem); color: var(--black);">
+                                Trusted by Over
+                                3000+ Investors
+                            </h1>
+                        </div>
+                        <div class="small-designs d-flex gap-3 mt-5">
+                            <span></span>
+                            <span></span>
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <div class="feedback-row">
+
+                            <div class="feedback-card">
+                                <span class="bloquote">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentcolor">
+                                        <path
+                                            d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64L0 216zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-136z" />
+                                    </svg>
+                                </span>
+                                <p>I'm impressed by the level of professionalism and dedication displayed here. They
+                                    genuinely care about their clients' success and go above and beyond to ensure
+                                    optimal
+                                    outcomes.</p>
+
+                                <div class="d-flex align-items-center gap-3">
+                                    <span class="avatar">
+                                        <img src="../images/65fa76d4033ca1710913236.png" alt="">
+                                    </span>
+                                    <span>
+                                        <h4>Samantha garcia</h4>
+                                        <p style="font-size: 16px;">San Fransico</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <span class="bloquote">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentcolor">
+                                        <path
+                                            d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64L0 216zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-136z" />
+                                    </svg>
+                                </span>
+                                <p>A reliable partner for real estate investing! They guided me through every step of
+                                    the
+                                    process, from property selection to closing deals. their expertise and
+                                    professionalism
+                                    are unmatched. </p>
+
+                                <div class="d-flex align-items-center gap-3 ">
+                                    <span class="avatar">
+                                        <img src="../images/65fa762d3be721710913069.png" alt="">
+                                    </span>
+                                    <span>
+                                        <h4>Mark Roberts</h4>
+                                        <p style="font-size: 16px;">New York</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <span class="bloquote">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentcolor">
+                                        <path
+                                            d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64L0 216zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-136z" />
+                                    </svg>
+                                </span>
+                                <p>I've been with this platform for years, and they consistently deliver exceptional
+                                    results. Their transparent communication and strategic investment advice have earned
+                                    my
+                                    trust and loyalty.</p>
+
+                                <div class="d-flex align-items-center gap-3">
+                                    <span class="avatar">
+                                        <img src="../images/65fa75e5c16a21710912997.png" alt="">
+                                    </span>
+                                    <span>
+                                        <h4>Rachel Lewis</h4>
+                                        <p style="font-size: 16px;">Paris</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <span class="bloquote">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentcolor">
+                                        <path
+                                            d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64L0 216zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-136z" />
+                                    </svg>
+                                </span>
+                                <p>Five star all the way! This platform helped me diversify my investment portfolio with
+                                    real estate, and i couldn't be happier with the results. Trustworthy, Knowledgeable,
+                                    and
+                                    always availabe to address any concerns.</p>
+
+                                <div class="d-flex align-items-center gap-3">
+                                    <span class="avatar">
+                                        <img src="../images/65fa755d201401710912861.png" alt="">
+                                    </span>
+                                    <span>
+                                        <h4>Emily Hughes</h4>
+                                        <p style="font-size: 16px;">Australia</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <span class="bloquote">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentcolor">
+                                        <path
+                                            d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64L0 216zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-136z" />
+                                    </svg>
+                                </span>
+                                <p>I've tried various investment platforms, but none compare to professionalism and
+                                    expertise offerd here. Their attention to detail and commitment to client
+                                    satisfaction
+                                    sets them apart.
+                                    Highly recommended!</p>
+
+                                <div class="d-flex align-items-center gap-3">
+                                    <span class="avatar">
+                                        <img src="../images/65fa750f0d0781710912783.png" alt="">
+                                    </span>
+                                    <span>
+                                        <h4>Michael Thompson</h4>
+                                        <p style="font-size: 16px;">Berlin</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <span class="bloquote">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentcolor">
+                                        <path
+                                            d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64L0 216zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-136z" />
+                                    </svg>
+                                </span>
+                                <p>Expeptional service! The team goes above and beyond to ensure their client's success.
+                                    From start to finish they provide thorough guidance and support, making my
+                                    investment
+                                    journey smooth and rewarding</p>
+
+                                <div class="d-flex align-items-center gap-3">
+                                    <span class="avatar">
+                                        <img src="../images/65fa74cb84b8f1710912715.png" alt="">
+                                    </span>
+                                    <span>
+                                        <h4>Sarah Johnson</h4>
+                                        <p style="font-size: 16px;">Cir. Shiloh, Hawaii</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brands-row">
+                    <div class="brand-col">
+                        <div class="brands-logo">
+                            <img src="../images/brand-logo-1.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="brand-col">
+                        <div class="brands-logo">
+                            <img src="../images/brand-logo-2.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="brand-col">
+                        <div class="brands-logo">
+                            <img src="../images/brand-logo-3.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="brand-col">
+                        <div class="brands-logo">
+                            <img src="../images/brand-logo-4.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="brand-col">
+                        <div class="brands-logo">
+                            <img src="../images/brand-logo-5.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="brand-col">
+                        <div class="brands-logo">
+                            <img src="../images/brand-logo-6.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="brand-col">
+                        <div class="brands-logo">
+                            <img src="../images/brand-logo-7.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="brand-col">
+                        <div class="brands-logo">
+                            <img src="../images/brand-logo-8.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="brand-col">
+                        <div class="brands-logo">
+                            <img src="../images/brand-logo-9.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="brand-col">
+                        <div class="brands-logo">
+                            <img src="../images/brand-logo-10.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="brand-col">
+                        <div class="brands-logo">
+                            <img src="../images/brand-logo-11.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END -->
+
+        <!-- BLOG-SECTION -->
+        <section class="blog-section bg-secondary  bg-opacity-10 py-5">
+            <div class="container py-5">
+                <div class="heading  py-3 ">
+                    <span class="label rounded d-inline-block mb-3"
+                        style="padding: 5px 12px; font-size: clamp(1em, 3.1vw, 1.2rem); color: var(--orange-color); background: #fff0e6;">
+                        Our blogs
+                    </span>
+                    <div class="d-flex justify-content-between">
+                        <h1 class="title fw-bold" style="font-size: clamp(1.8em, 3vw, 4.2rem); color: var(--black);">
+                            Latest News & Articles
+                        </h1>
+                        <a href="#" class="explore-icon d-flex align-items-center gap-3 fs-5"> Explore
+                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentcolor">
+                                    <path
+                                        d="M566.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L466.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l434.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                                </svg>
+                            </span></a>
+                    </div>
+                </div>
+                <div class="row mt-5 g-4">
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card blog-card border-0">
+                            <a href="#" class="blog-img">
+                                <img src="../images/thumb_65ec1ec1c185f1709973185.png" alt="" class="img-fluid">
+
+                                <div class="blog-date">
+                                    <h2>07</h2>
+                                    <h5>Oct</h5>
+                                </div>
+                            </a>
+                            <div class="blog-content">
+                                <a href="#" class="blog-label pb-4 d-block">
+                                    Important Tips for Real Estate Ivesting Career
+                                </a>
+
+                                <p>Embarking on a journey into real estate investing demands a comprehensive approach
+                                    that encompasses various critical
+                                    factors. Here are ten esse...</p>
+
+                                <a href="#" class="blog-footer-label">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card blog-card border-0">
+                            <a href="#" class="blog-img">
+                                <img src="../images/thumb_65ec1e6b4a4061709973099.png" alt="" class="img-fluid">
+
+                                <div class="blog-date">
+                                    <h2>21</h2>
+                                    <h5>Nov</h5>
+                                </div>
+                            </a>
+                            <div class="blog-content">
+                                <a href="#" class="blog-label pb-4 d-block">
+                                    What is Turn Key Real Estate Investing?
+                                </a>
+
+                                <p>Investing in Real Estate: A Guide to Turnkey Investing Investing in real estate can
+                                    be a lucrative venture, but it often
+                                    requires significant time, ef...</p>
+
+                                <a href="#" class="blog-footer-label">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card blog-card border-0">
+                            <a href="#" class="blog-img">
+                                <img src="../images/thumb_65ec1dda255de1709972954.png" alt="" class="img-fluid">
+
+                                <div class="blog-date">
+                                    <h2>21</h2>
+                                    <h5>Nov</h5>
+                                </div>
+                            </a>
+                            <div class="blog-content">
+                                <a href="#" class="blog-label pb-4 d-block">
+                                    How to Build Your Real Estate Portfolio
+                                </a>
+
+                                <p>Are you tired of renting and dreaming of owning multiple properties? Transitioning
+                                    from being a renter to becoming a
+                                    real estate investor can b...</p>
+
+                                <a href="#" class="blog-footer-label">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END -->
+
+        <!-- FOOTER -->
+        <footer class="py-5" style="background: #002e47;">
+            <div class="container pt-5">
+                <div class="row g-5 pb-5" style=" border-bottom: 1px solid #075680a4;">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="../pages/index.html" class="footer-logo d-block pb-4">
+                            <img src="../images/logo_dark.png" alt="logo" style="max-width: 90%;">
+                        </a>
+                        <p>RailVest offers a seamless avenue for establishing a cutting-edge investment platform without
+                            necessitating coding
+                            expertise within a short time.</p>
+
+                        <div class="social-handles">
+                            <a href="#" class="socials">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentcolor">
+                                    <path
+                                        d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg>
+                            </a>
+
+                            <a href="#" class="socials">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentcolor">
+                                    <path
+                                        d="M80 299.3l0 212.7 116 0 0-212.7 86.5 0 18-97.8-104.5 0 0-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2l0-88.7C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4l0 42.1-66 0 0 97.8 66 0z" />
+                                </svg>
+                            </a>
+
+                            <a href="#" class="socials">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentcolor">
+                                    <path
+                                        d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z" />
+                                </svg>
+                            </a>
+
+                            <a href="#" class="socials">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentcolor">
+                                    <path
+                                        d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103l0-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6">
+                        <div>
+                            <h4>Quick Links</h4>
+                            <span class="line-design"></span>
+                        </div>
+
+                        <ul class="navbar-Nav">
+                            <li><a href="../pages/index.html" class="nav-link">Home</a></li>
+                            <li><a href="../pages/blog.html" class="nav-link">Blog</a></li>
+                            <li><a href="../pages/contact.html" class="nav-link">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div>
+                            <h4>Contact Us</h4>
+                            <span class="line-design"></span>
+                        </div>
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item d-flex align-items-center gap-1 border-0"><span class="location-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentcolor"
+                                        style="color: var(--orange-color);">
+                                        <path
+                                            d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z" />
+                                    </svg>
+                                </span>
+                                123 Main Street, London
+                            </li>
+                            <li class="nav-item border-0"><a href="mailto:support@realvest.com"
+                                    class="nav-link text-white d-flex align-items-center gap-1">
+                                    <span class="message-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                            fill="currentcolor">
+                                            <path
+                                                d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z" />
+                                        </svg>
+                                    </span>
+                                    support@realvest.com</a>
+                            </li>
+                            <li class="nav-item border-0"><a href="tel:+44 20 1234 5678"
+                                    class="nav-link text-white d-flex align-items-center gap-1">
+                                    <span class="contact-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                            fill="currentcolor">
+                                            <path
+                                                d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z" />
+                                        </svg>
+                                    </span>
+                                    +44 20 1234 5678</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div>
+                            <h4>Subscribe for updates</h4>
+                            <span class="line-design"></span>
+                        </div>
+
+                        <p>Stay on top of the latest blog posts, news and announcements</p>
+
+                        <form action="submit">
+                            <input type="email" name="email" id="email" placeholder="Email Address" required>
+
+                            <button type="submit" class="footer-btn rounded">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="last-row pt-5 d-flex justify-content-between flex-column flex-sm-row">
+                    <span class="copywright text-white">
+                        © 2026 <a href="../pages/index.html" style="color: var(--orange-color);">RealVest</a>. All
+                        Rights
+                        Reserved
+                    </span>
+                    <span class="d-flex gap-5">
+                        <a href="../pages/privacy.html" class="nav-link">Privacy Policy</a>
+                        <a href="../pages/T&S.html" class="nav-link">Terms of Service</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <!-- END -->
+    </main>
+    <!-- JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

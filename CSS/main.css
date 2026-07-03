@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+
+:root {
+    --primary: #000000cc;
+    --orange-color: #ff6600;
+    --light-orange: #fd7e14;
+    --black: #212121;
+    --text-color: #8b8989;
+    --fonts: "Maven-pro", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "red hat display", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+svg {
+    width: 25px;
+    height: 25px;
+}
+
+p {
+    color: var(--text-color);
+}

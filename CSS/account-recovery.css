@@ -1,0 +1,71 @@
+/* ACCOUNT-RECOVERY-BG */
+.account-recovery h1 {
+    font-size: clamp(1.4em, 3vw, 1.9rem);
+    font-weight: 700;
+    color: var(--black);
+
+}
+/* END */
+
+/* ACCOUNT-RECOVERY-FORM */
+.account-recovery-form {
+    background: url("../images/pattern-3.png");
+        background-repeat: repeat-x;
+        background-position: bottom;
+}
+.account-recovery-form form label {
+    text-align: left;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+
+    span {
+        color: #e94235;
+    }
+}
+
+
+.account-recovery-form form input {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #f8f8f8;
+    border: 1px solid #dfdbdb;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.account-recovery-form form input:focus {
+    border-color: #e94235;
+}
+
+.account-recovery-form form .checkbox {
+    border: 1px solid #dfdbdb;
+    padding: 22px 15px;
+    background: #fcfbfb;
+
+}
+
+.account-recovery-form form .checkbox .box {
+    border: 2px solid #000000;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+
+}
+
+.account-recovery-form form .submit-btn {
+    display: block;
+    background: var(--orange-color);
+    color: #fff;
+    padding: 12px 20px;
+    width: 100%;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.account-recovery-form form .submit-btn:hover {
+    background: #df5e08;
+}
+/* END */

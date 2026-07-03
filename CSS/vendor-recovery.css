@@ -1,0 +1,73 @@
+/* VENDOR-RECOVERY-FORM */
+.vendor-recovery h4{
+    padding-bottom: 20px;
+    color: #353c69;
+    font-weight: 700;
+    font-size: 21px;
+    font-family: var(--fonts);
+}
+.vendor-recovery p {
+    font-size: 14px;
+    font-family: var(--fonts);
+}
+.vendor-recovery form label {
+    text-align: left;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    color: #525f80;
+    font-family: var(--fonts);
+
+    span {
+        color: #e94235;
+    }
+}
+
+
+.vendor-recovery form input {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: 1px solid #dfdbdb;
+    margin-bottom: 15px;
+    outline: none;
+    font-family: var(--fonts);
+}
+
+.vendor-recovery form input:focus {
+    border-color: #e94235;
+}
+
+.vendor-recovery form .checkbox {
+    border: 1px solid #dfdbdb;
+    padding: 22px 15px;
+    background: #fcfbfb;
+
+}
+
+.vendor-recovery form .checkbox .box {
+    border: 2px solid #000000;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+
+}
+
+.vendor-recovery form .submit-btn {
+    display: block;
+    background: var(--orange-color);
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.4s;
+    font-family: var(--fonts);
+}
+
+.vendor-recovery form .submit-btn:hover {
+    background: #df5e08;
+}
+
+/* END */

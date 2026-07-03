@@ -1,0 +1,47 @@
+/* ABOUT-BG */
+.about-hero h1 {
+    font-size: clamp(1.4em, 3vw, 1.9rem);
+    font-weight: 700;
+    color: var(--black);
+}
+
+/* END */
+
+/* ABOUT-SECTION */
+.about-section {
+    background: url(../images/pattern-top-right.png)top right;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+/* END */
+
+/* CONCERN-SECTION */
+.concern-section {
+    background: url(../images/pattern-top-right.png)top right , url("../images/pattern-bottom-left.png")bottom left;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+.concern-section h1 {
+    font-size: clamp(1.6em, 4.3vw, 2.8rem);
+    font-weight: 700;
+    color: var(--black);
+}
+
+.accordion {
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    padding: 20px 17px;
+    transition: 0.3s;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.accordion-button:hover {
+    color: var(--orange-color);
+}
+
+/* END */

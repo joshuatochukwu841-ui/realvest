@@ -1,0 +1,8 @@
+/* BLOG-BG */
+.blog-hero h1 {
+    font-size: clamp(1.4em, 3vw, 1.9rem);
+    font-weight: 700;
+    color: var(--black);
+}
+
+/* END */

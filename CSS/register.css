@@ -1,0 +1,153 @@
+/* REGISTER-SECTION */
+.register {
+    background: url("../images/pattern-3.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.register h4 {
+    font-size: 25px;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.register .social-btn {
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.register .social-btn.blue {
+    border: 1px solid #1877f2;
+    color: #1877f2;
+    background-color: #1876f213;
+    transition: 0.4s;
+}
+
+.register .social-btn.blue:hover {
+    background: #1877f2;
+    color: #fff;
+}
+
+.register .social-btn.orange {
+    border: 1px solid #e94235;
+    color: #e94235;
+    background: #e9413510;
+    transition: 0.4s;
+}
+
+.register .social-btn.orange:hover {
+    background-color: #e94235;
+    color: #fff;
+}
+
+.register .social-btn.dark-blue {
+    border: 1px solid #0077b5;
+    color: #0077b5;
+    background: #0076b517;
+    transition: 0.4s;
+}
+
+.register .social-btn.dark-blue:hover {
+    background: #0077b5;
+    color: #fff;
+}
+
+.register .social-img img {
+    width: 20px;
+    height: 20px;
+}
+
+.register form label {
+    text-align: left;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+
+    span {
+        color: #e94235;
+    }
+}
+
+
+.register form input {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #f8f8f8;
+    border: 1px solid #dfdbdb;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.register form input:focus {
+    border-color: #e94235;
+}
+
+.register form .checkbox {
+    border: 1px solid #dfdbdb;
+    padding: 22px 15px;
+    background: #fcfbfb;
+
+}
+
+.register form .checkbox .box {
+    border: 2px solid #000000;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+
+}
+
+.register form .custom-checkbox {
+    gap: 3px;
+}
+
+.register form .custom-checkbox input {
+    width: unset;
+    margin-bottom: unset;
+    padding: unset;
+    color: var(--orange-color);
+}
+
+.register form .terms-conditions {
+    font-size: 14px;
+    color: var(--orange-color);
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+.register form .terms-conditions:hover {
+    color: #df5e08;
+}
+
+.register form .register-btn {
+    display: block;
+    background: var(--orange-color);
+    color: #fff;
+    padding: 12px 20px;
+    width: 100%;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.register form .register-btn:hover {
+    background: #df5e08;
+}
+
+.register form .Login-link {
+    color: var(--orange-color);
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+.register form .Login-link:hover {
+    color: #df5e08;
+}
+/* END */

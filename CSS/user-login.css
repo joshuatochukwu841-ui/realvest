@@ -1,0 +1,150 @@
+/* USER-LOGIN */
+.user-login {
+    background: url("../images/pattern-3.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.user-login h4 {
+    font-size: 25px;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.user-login .social-btn {
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+        justify-content: center;
+            align-items: center;
+    display: flex;
+    gap: 4px;
+}
+
+.user-login .social-btn.blue {
+    border: 1px solid #1877f2;
+    color: #1877f2;
+    background-color: #1876f213;
+    transition: 0.4s;
+}
+
+.user-login .social-btn.blue:hover {
+    background: #1877f2;
+    color: #fff;
+}
+
+.user-login .social-btn.orange {
+    border: 1px solid #e94235;
+    color: #e94235;
+    background: #e9413510;
+    transition: 0.4s;
+}
+
+.user-login .social-btn.orange:hover {
+    background-color: #e94235;
+    color: #fff;
+}
+
+.user-login .social-btn.dark-blue {
+    border: 1px solid #0077b5;
+    color: #0077b5;
+    background: #0076b517;
+    transition: 0.4s;
+}
+
+.user-login .social-btn.dark-blue:hover {
+    background: #0077b5;
+    color: #fff;
+}
+
+.user-login .social-img img {
+    width: 20px;
+    height: 20px;
+}
+
+.user-login form label {
+    text-align: left;
+    padding-bottom: 5px;
+    font-size: 15px;
+
+    span {
+        color: #e94235;
+    }
+}
+
+.user-login form input {
+    width: 100%;
+    padding: 11px 16px;
+    border-radius: 8px;
+    background: #f8f8f8;
+    border: 1px solid #dfdbdb;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.user-login form input:focus {
+    border-color: #e94235;
+}
+
+.user-login form .checkbox {
+    border: 1px solid #dfdbdb;
+    padding: 22px 15px;
+    background: #fcfbfb;
+
+}
+
+.user-login form .checkbox .box {
+    border: 2px solid #000000;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+
+}
+
+.user-login form .custom-checkbox {
+    gap: 3px;
+}
+
+.user-login form .custom-checkbox input {
+    width: unset;
+    margin-bottom: unset;
+    padding: unset;
+}
+
+.user-login form .reset-password {
+    font-size: 14px;
+    color: var(--orange-color);
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+.user-login form .reset-password:hover {
+    color: #df5e08;
+}
+
+.user-login form .login-btn {
+    display: block;
+    background: var(--orange-color);
+    color: #fff;
+    padding: 12px 20px;
+    width: 100%;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.user-login form .login-btn:hover {
+    background: #df5e08;
+}
+
+.user-login form .register-link {
+    color: var(--orange-color);
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+.user-login form .register-link:hover {
+    color: #df5e08;
+}
+
+/* END */

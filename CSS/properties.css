@@ -1,0 +1,152 @@
+/* PROPERTIES-BG */
+.properties-hero h1 {
+    font-size: clamp(1.4em, 3vw, 1.9rem);
+    font-weight: 700;
+    color: var(--black);
+}
+
+/* END */
+
+/* PROPERTIES-DASHBOARD */
+.sidebar {
+    border-radius: 15px;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+.sidebar .sidebar-label {
+    font-size: clamp(1.2em, 3vw, 1.3rem);
+    font-weight: 700;
+    color: var(--black);
+}
+
+.sidebar input,
+button {
+    padding: 10px 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background: #f8f8f8;
+    border: 1px solid #dfdbdb;
+    outline: none;
+    color: var(--black);
+}
+.sidebar button {
+    color: var(--text-color);
+}
+
+.sidebar input:focus {
+    border-color: var(--orange-color);
+}
+
+.sidebar button:focus {
+    border-color: var(--orange-color);
+}
+
+.sidebar .dropdown-menu {
+    padding: 5px;
+    width: 100%;
+}
+
+.sidebar .dropdown-menu input {
+    border: 1px solid var(--black);
+    border-radius: unset;
+    margin-bottom: 5px;
+    background: #ffff;
+}
+
+.sidebar .dropdown-menu span {
+    display: block;
+    padding: 10px 16px;
+    width: 100%;
+    margin-bottom: unset;
+    background: #f8f8f8;
+}
+
+.sidebar .dropdown-menu button {
+    display: block;
+    padding: 10px 16px;
+    width: 100%;
+    margin-bottom: unset;
+    background: #ffffff;
+    border: none;
+    border-bottom: 1px solid #e2dede33;
+    border-radius: unset;
+    text-align: left;
+    color: var(--text-color);
+
+}
+
+.sidebar .dropdown-menu button:hover {
+    color: var(--black);
+    background: #f8f8f8;
+}
+
+.sidebar h4 {
+    font-size: 15px;
+}
+
+.sidebar .custom-radio-button {
+    gap: 10px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.sidebar .custom-radio-button input {
+    display: none;
+    color: var(--text-color);
+}
+
+.sidebar .checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #dfdbdb;
+}
+
+.sidebar .custom-radio-button input:checked+.checkbox {
+    border: 5px solid var(--orange-color);
+}
+
+.sidebar form .form-footer input {
+    padding: 6px 16px;
+    background: transparent;
+    border: 1px solid #dfdbdb;
+}
+
+.sidebar form .form-footer input::placeholder {
+    color: var(--black);
+}
+
+.sidebar form .form-footer .filter-btn {
+    color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+    background: #f8f8f8;
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    transition: 0.4s;
+
+    svg {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+.sidebar form .form-footer .filter-btn:hover {
+    color: #fff;
+    background: var(--orange-color);
+}
+
+/* END */
+
+/* PROPERTIES-DASHBOARD */
+.properties-dashboard {
+    background: url(../images/pattern-top-right.png)top right, url("../images/pattern-bottom-left.png")bottom left;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+/* END */

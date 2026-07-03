@@ -1,0 +1,114 @@
+/* CONTACT-BG */
+.contact-hero h1 {
+    font-size: clamp(1.4em, 3vw, 1.9rem);
+    font-weight: 700;
+    color: var(--black);
+}
+
+/* END */
+
+/* CONTACT-DETAILS */
+.pattern-design {
+    background: url(../images/pattern-top-right.png)top right, url("../images/pattern-bottom-left.png")bottom left;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+.content {
+    border: 1px solid hsla(24, 100%, 50%, 0.32);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    padding: 32px 24px;
+}
+
+.content .contact-icon {
+    width: 57px;
+    height: 57px;
+    border: 1px solid var(--orange-color);
+    color: var(--orange-color);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+.content .details h3 {
+    font-weight: 600;
+    color: var(--black);
+    font-size: clamp(1.2em, 3vw, 1.3rem);
+}
+
+.content .details h5,
+.h5 {
+    font-size: 16px;
+    color: var(--text-color);
+    transition: 0.4s;
+}
+
+.content .details .h5:hover {
+    color: var(--orange-color);
+}
+
+/* END */
+
+/* GET-IN-TOUCH */
+.header {
+    font-weight: 700;
+    color: var(--black);
+    font-size: clamp(1.5em, 3vw, 1.7rem);
+    padding-bottom: 9px;
+}
+
+.label {
+    color: var(--text-color);
+    font-size: clamp(1em, 3vw, 1.2rem);
+    padding-bottom: 35px;
+}
+
+form .input-box {
+    width: 100%;
+}
+
+form input,
+textarea {
+    padding: 14px 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #f8f8f8;
+    border: 1px solid #cecaca;
+    outline: none;
+}
+
+form input:focus {
+    border-color: var(--orange-color);
+}
+
+form textarea:focus {
+    border-color: var(--orange-color);
+}
+
+form .form-btn{
+    padding: 11px 35px;
+    background: var(--orange-color);
+    color: #fff;
+    transition: 0.4s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+form .form-btn:hover{
+    background: #df5e08;
+    color: #fff;
+
+}
+
+/* END */
